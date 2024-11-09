@@ -1,0 +1,41 @@
+﻿  test_main.cpp
+D:\VS\VC\Tools\MSVC\14.41.34120\include\utility(247,16): warning C4267: инициализация: преобразование из "size_t" в "_Ty1"; возможна потеря данных
+D:\VS\VC\Tools\MSVC\14.41.34120\include\utility(247,16): warning C4267:         with
+D:\VS\VC\Tools\MSVC\14.41.34120\include\utility(247,16): warning C4267:         [
+D:\VS\VC\Tools\MSVC\14.41.34120\include\utility(247,16): warning C4267:             _Ty1=int
+D:\VS\VC\Tools\MSVC\14.41.34120\include\utility(247,16): warning C4267:         ]
+  (компиляция исходного файла "test_main.cpp")
+      D:\VS\VC\Tools\MSVC\14.41.34120\include\utility(247,16):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          D:\gvozd_aho\aho_corasick\aho_corasick\aho_corasick.hpp(91,29):
+          выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<int,std::string> &std::vector<std::pair<int,std::string>,std::allocator<std::pair<int,std::string>>>::emplace_back<unsigned __int64,std::string&>(unsigned __int64 &&,std::string &)"
+          D:\VS\VC\Tools\MSVC\14.41.34120\include\vector(858,24):
+          выполняется компиляция ссылки на экземпляр шаблон функции "_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<unsigned __int64,std::string&>(unsigned __int64 &&,std::string &)"
+          with
+          [
+              _Ty=std::pair<int,std::string>
+          ]
+          D:\VS\VC\Tools\MSVC\14.41.34120\include\vector(776,20):
+          выполняется компиляция ссылки на экземпляр шаблон функции "_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<unsigned __int64,std::string&>(unsigned __int64 &&,std::string &)"
+          with
+          [
+              _Ty=std::pair<int,std::string>
+          ]
+          D:\VS\VC\Tools\MSVC\14.41.34120\include\vector(794,27):
+          выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Default_allocator_traits<_Alloc>::construct<_Ty,unsigned __int64,std::string&>(_Alloc &,_Objty *const ,unsigned __int64 &&,std::string &)"
+          with
+          [
+              _Alloc=std::allocator<std::pair<int,std::string>>,
+              _Ty=std::pair<int,std::string>,
+              _Objty=std::pair<int,std::string>
+          ]
+          D:\VS\VC\Tools\MSVC\14.41.34120\include\xmemory(700,82):
+          выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<int,std::string>::pair<_Ty,std::string&,0>(_Other1 &&,_Other2) noexcept(false)"
+          with
+          [
+              _Ty=unsigned __int64,
+              _Other1=unsigned __int64,
+              _Other2=std::string &
+          ]
+  
+  aho_corasick.vcxproj -> D:\gvozd_aho\aho_corasick\x64\Debug\aho_corasick.exe
